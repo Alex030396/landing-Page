@@ -176,3 +176,10 @@ body {
 .bg-oftalmi {
     background: var(--azul_oftalmi);
 }
+
+@media (max-width:576px) {
+    .ajuste-tamaño{
+        height:100% ;
+        width:100% ;
+    }
+}
