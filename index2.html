@@ -3,122 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Empresa</title>
+    <title>Especialidades Médicas</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-top: 50px;
+        }
+        h2 {
+            color: #0d6efd;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .form-label {
+            font-weight: 500;
+        }
+        #btn-reset {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Logo centrado -->
-    <div class="logo-container bg-oftalmi">
-        <img src="img/LOGO_OFTALMI_BL.png" alt="Logo de la empresa" class="logo">
-    </div>
-    
-    <!-- Barra de color azul -->
-    <div class="container-fluid">
-    <div class="text-center bg-primary row">
-        <div class="col ">
-            <div class="text-end mt-0 mt-sm-5">
-                <h1><span class="text-white">UCV Conecta</span> <br> <span class="letras_ucv"> Innovación y Futuro </span> </h1>
-            </div>    
-        </div>
-        <div class="col d-flex ">
-            <img src="img/ucv_libre.png" class="ajuste-tamaño" alt="ucv" width="50%" >
-        </div>
-    </div>
-    </div>
-    <!-- Contenedor principal con scroll -->
-    <div class="content-wrapper">
-        <!-- Imagen de fondo -->
-        <img src="https://images.unsplash.com/photo-1518638150340-f706e86654de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2067&q=80" alt="Imagen de la empresa" class="hero-image">
-        
-        <!-- Formulario -->
-        <div class="form-container">
-            <h2 class="form-title letras_oftalmi">Formulario de Contacto</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="nombreCompleto" class="form-label fw-bold letras_oftalmi">Nombre completo</label>
-                    <input type="text" class="form-control" id="nombreCompleto" placeholder="Nombres y Apellidos">
-                </div>
-                
-                <div class="mb-3">
-                    <label for="cedula" class="form-label fw-bold letras_oftalmi">Cédula o pasaporte</label>
-                    <input type="text" class="form-control" id="cedula" placeholder="Número de documento">
-                </div>
-                
-                <div class="mb-3">
-                    <label for="telefono" class="form-label fw-bold letras_oftalmi">Teléfono</label>
-                    <input type="tel" class="form-control" id="telefono" placeholder="(0400)-(000-0000)" 
-                           onkeypress="return event.charCode >= 48 && event.charCode <= 57" 
-                           oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                </div>
-                
-                <div class="mb-3">
-                    <label for="correo" class="form-label fw-bold letras_oftalmi">Correo electrónico</label>
-                    <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com">
-                </div>
-                
-                <div class="mb-3">
-                    <label for="profesion" class="form-label fw-bold letras_oftalmi">Profesión</label>
-                    <select class="form-control" id="profesion">
-                        <option selected disabled>Seleccione su profesión</option>
-                        <optgroup label="Especialidad">
-                        <option>Medicina General</option>
-                        <option>Residente 1</option>
-                        <option>Residente 2</option>
-                        <option>Residente 3</option>
-                        <option>Pediatra</option>
-                        <option>Oftalmólogo</option>
-                        <option>Neumólogo</option>
-                        <option>Internista</option>
-                        <option>Otorrinolaringólogo</option>
-                        <option>Ginecólogo</option>
-                        <option>Cirujano</option>
-                        </optgroup>
-                        
-                        <optgroup label="Sub Especialidad">
-                        <option>Neurólogo</option>
-                        <option>Inmunólogo</option>
-                        <option>Reumatólogo</option>
-                        <option>Oftalmólogo Pediatrica</option>
-                        </optgroup>
-                    </select>
-                </div>
-                
-                <div class="mb-3">
-                    <label for="lugarVive" class="form-label fw-bold letras_oftalmi">Dirección de Consultorio / Consulta Hospitalaria</label>
-                    <input type="text" class="form-control" id="lugarVive" placeholder="Dirección">
-                </div>
-                
-                <button type="submit" class="btn btn-primary">Enviar Información</button>
-                
-                <p class="form-legend mt-3">
-                    <i class="fas fa-info-circle"></i> Todos sus datos están protegidos y serán utilizados únicamente para fines de contacto.
-                </p>
-            </form>
-        </div>
-    </div>
-    
-    <!-- Espaciador para el fondo en móviles -->
-    <div class="footer-spacer"></div>
-    
-
-    <div class="container mt-5">
-        <a class="btn btn-primary" href="index.html">Opcion 1</a>
+    <div class="container">
+        <h2>Selección de Especialidades Médicas</h2>
+        <form id="especialidades-form">
+            <div class="mb-3">
+                <label for="especialidad" class="form-label">Especialidad</label>
+                <select class="form-select" id="especialidad" required>
+                    <option value="" selected disabled>Seleccione una especialidad</option>
+                    <option value="oftalmologia">Oftalmología</option>
+                    <option value="otorrinolaringologia">Otorrinolaringología</option>
+                    <option value="medicina_interna">Medicina Interna</option>
+                </select>
+            </div>
+            
+            <div class="mb-3">
+                <label for="subespecialidad" class="form-label">Subespecialidad</label>
+                <select class="form-select" id="subespecialidad" disabled required>
+                    <option value="" selected disabled>Primero seleccione una especialidad</option>
+                </select>
+            </div>
+            
+            <button type="button" id="btn-reset" class="btn btn-outline-secondary">Reiniciar selección</button>
+        </form>
     </div>
 
-    <!-- Bootstrap JS (opcional, para funcionalidades de Bootstrap) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Script para formatear el teléfono -->
-    <script>
-        document.getElementById('telefono').addEventListener('input', function (e) {
-            // Eliminar cualquier carácter no numérico
-            let x = e.target.value.replace(/\D/g, '').match(/(\d{0,4})(\d{0,3})(\d{0,4})/);
-            e.target.value = !x[2] ? x[1] : '(' + x[1] + ')-' + x[2] + (x[3] ? '-' + x[3] : '');
-        });
-    </script>
+    
+    <script src="js/script.js" ></script>    
+    
+    
 </body>
 </html>

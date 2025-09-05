@@ -1,12 +1,26 @@
 :root {
     --azul_oftalmi: #273480;
     --verde-ucv: #29C978;
+    --morado-oftalmi: #790098;
+    --blue-oftalmi: #5D8AE3;
+    --cielo-oftalmi: #00E5FC;
+    --dark-bu-ofralmi: #0022A8;
+    --amarillo-oftalmi: #FCEE21;
 }
 .letras_oftalmi {
     color: var(--azul_oftalmi);
 }
 .letras_ucv {
     color: var(--verde-ucv);
+}
+.bg-cielo-oftalmi {
+    background: var(--cielo-oftalmi);
+}
+.bg-dark-oftalmi {
+    background: var(--dark-bu-ofralmi);
+}
+.letras_amarillas {
+    color: var(--amarillo-oftalmi);
 }
 
 body {
