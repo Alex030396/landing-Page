@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+ 
+
             // Definir las subespecialidades
             const subespecialidades = {
                 medicina_general: [],
@@ -111,3 +114,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         });
+
+        
