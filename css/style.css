@@ -28,7 +28,7 @@ body {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    filter: brightness(0.8);
+    /* filter: brightness(0.8);S */
     position: fixed;
     top: 0;
     left: 0;
@@ -194,4 +194,7 @@ input:focus {
 }
 .mar{
     margin-left: 20rem;
+}
+.mary{
+    margin-left: 15rem;
 }
