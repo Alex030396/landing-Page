@@ -188,14 +188,14 @@ input:focus {
     width: 50%;
 }
 .mary{
-    margin-left: 15rem;
+    margin-left: 20rem;
     height: 180px;
 }
 
 
 @media (max-width: 1120px) {
     .mary{
-        margin-left: 5.5rem;
+        margin-left: 11.5rem;
         height: 150px;
     }
     .mar{
@@ -204,8 +204,8 @@ input:focus {
 }
 @media (max-width: 820px) {
     .mary{
-        margin-left: 0rem;
-        height: 150px;
+        margin-left: 5.5rem;
+        height: 140px;
     }
     .mar{
         margin-left: 10rem;
@@ -223,7 +223,7 @@ input:focus {
 }
 @media (max-width: 581px) {
     .mary{
-        margin-left: 0rem;
+        margin-left: 4rem;
         height: 100px;
     }
     .mar{
@@ -233,8 +233,8 @@ input:focus {
 }
 @media (max-width: 393px) {
     .mary{
-        margin-left: 0rem;
-        height: 70px;
+        margin-left: 0.5rem;
+        height: 80px;
     }
     .mar{
         margin-left: 0rem;
