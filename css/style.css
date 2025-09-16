@@ -1,5 +1,5 @@
 :root {
-    --azul_oftalmi: #273480;
+    --azul_oftalmi: #001E60;
 }
 
 .letras_oftalmi {
@@ -16,7 +16,9 @@ body {
     background-color: white;
     padding: 15px 0;
 }
-
+.bg-blanco {
+    background-color: #FFFFFF;
+}
 .logo {
     max-width: 200px;
     height: auto;
@@ -189,4 +191,7 @@ input:focus {
     .content-wrapper {
         padding: 10px;
     }
+}
+.mar{
+    margin-left: 20rem;
 }

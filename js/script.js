@@ -380,8 +380,7 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             
             const jsonData = JSON.stringify(formData, null, 2);
-            // document.getElementById('jsonOutput').textContent = jsonData;
-            // document.getElementById('jsonOutput').style.display = 'block';
+           
             
             // Guardar datos
             const resultado = guardarDatos(formData);
