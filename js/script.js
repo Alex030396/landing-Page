@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const subespecialidades = {
         medicina_general: ['No aplica'],
         residente: ['Medicina Familiar','Medicina Interna','Neumonologia','Oftalmologia','Otorrinolaringología','Pediatría', 'Otra'],
-        oftalmologia: ['Retina', 'Córnea', 'Glaucoma', 'Oftalmología Pediátrica', 'Estrabismo','Cataratas','Cirugía refractiva','Cirugía pediátrica','Neurooftalmología','Oculoplástia','Segmento Anterior','Segmento Posterior','Retina, vitreo y uveítis','Oculoplastía lagrimal y orbita','Oncología ocular y tumores', 'Otra'],
-        otorrinolaringologia: ['Alergia','Audiología','Cirugía De Cabeza Y Cuello', 'Cirugía Plástica Y Reconstructiva Facial','Laringología', 'Otología y Otoneurología', 'Otorrinolaringología Pediátrica', 'Rinología',  'Disfagia', 'Patología de Glándulas Salivales', 'Otra'],
-        medicina_interna:['Alergología','Cardiología', 'Endocrinología','Farmacología', 'Gastroenterología','Geriatría', 'Hematología', 'Infectología', 'Intensivista', 'Medicina Crítica','Medicina Del Sueño', 'Nefrología' , 'Neumonología','Oncología', 'Reumatología', 'Otra'],
-        medicina_familiar: ['Geriatría','Medicina De La Adolescencia','Medicina Paliativa', 'Otra'],
-        pediatria: ['Cardiología Pediátrica','Endocrinología Pediátrica','Gastroenterología Pediátrica','Neonatología','Neumonología Pediátrica', 'Otra'],
-        neumonologia: ['Neumonología intervencionista','Neumonología crítica','Neumonología infantil', 'Otra']
+        oftalmologia: ['Retina', 'Córnea', 'Glaucoma', 'Oftalmología Pediátrica', 'Estrabismo','Cataratas','Cirugía refractiva','Cirugía pediátrica','Neurooftalmología','Oculoplástia','Segmento Anterior','Segmento Posterior','Retina, vitreo y uveítis','Oculoplastía lagrimal y orbita','Oncología ocular y tumores', 'Fellowship', 'Otra'],
+        otorrinolaringologia: ['Alergia','Audiología','Cirugía De Cabeza Y Cuello', 'Cirugía Plástica Y Reconstructiva Facial','Laringología', 'Otología y Otoneurología', 'Otorrinolaringología Pediátrica', 'Rinología',  'Disfagia', 'Patología de Glándulas Salivales', 'Fellowship', 'Otra'],
+        medicina_interna:['Alergología','Cardiología', 'Endocrinología','Farmacología', 'Gastroenterología','Geriatría', 'Hematología', 'Infectología', 'Intensivista', 'Medicina Crítica','Medicina Del Sueño', 'Nefrología' , 'Neumonología','Oncología', 'Reumatología', 'Fellowship', 'Otra'],
+        medicina_familiar: ['Geriatría','Medicina De La Adolescencia','Medicina Paliativa', 'Fellowship', 'Otra'],
+        pediatria: ['Cardiología Pediátrica','Endocrinología Pediátrica','Gastroenterología Pediátrica','Neonatología','Neumonología Pediátrica', 'Fellowship', 'Otra'],
+        neumonologia: ['Neumonología intervencionista','Neumonología crítica','Neumonología infantil', 'Fellowship', 'Otra']
     };
     
     // Obtener elementos del DOM
