@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Función para guardar datos (aquí puedes cambiar por tu método preferido)
+    // Función para guardar datos (Para cambiar de método)
     function guardarDatos(formData) {
         // Obtener datos existentes o inicializar array vacío
         let datosGuardados = JSON.parse(localStorage.getItem('formularios')) || [];
