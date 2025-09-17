@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
         medicina_general: ['No aplica'],
         residente: ['Medicina Familiar','Medicina Interna','Neumonologia','Oftalmologia','Otorrinolaringología','Pediatría', 'Otra'],
         oftalmologia: ['Retina', 'Córnea', 'Glaucoma', 'Oftalmología Pediátrica', 'Estrabismo','Cataratas','Cirugía refractiva','Cirugía pediátrica','Neurooftalmología','Oculoplástia','Segmento Anterior','Segmento Posterior','Retina, vitreo y uveítis','Oculoplastía lagrimal y orbita','Oncología ocular y tumores', 'Fellowship', 'Otra'],
-        otorrinolaringologia: ['Alergia','Audiología','Cirugía De Cabeza Y Cuello', 'Cirugía Plástica Y Reconstructiva Facial','Laringología', 'Otología y Otoneurología', 'Otorrinolaringología Pediátrica', 'Rinología',  'Disfagia', 'Patología de Glándulas Salivales', 'Fellowship', 'Otra'],
+        otorrinolaringologia: ['Alergia','Audiología','Cirugía De Cabeza Y Cuello', 'Cirugía Plástica Y Reconstructiva Facial','Laringología', 'Otología y Otoneurología', 'Otorrinolaringología Pediátrica', 'Rinología',  'Disfagia', 'Patología de Glándulas Salivales', 'Oncología de Cabeza y Cuello', 'Fellowship', 'Otra'],
         medicina_interna:['Alergología','Cardiología', 'Endocrinología','Farmacología', 'Gastroenterología','Geriatría', 'Hematología', 'Infectología', 'Intensivista', 'Medicina Crítica','Medicina Del Sueño', 'Nefrología' , 'Neumonología','Oncología', 'Reumatología', 'Fellowship', 'Otra'],
-        medicina_familiar: ['Geriatría','Medicina De La Adolescencia','Medicina Paliativa', 'Fellowship', 'Otra'],
-        pediatria: ['Cardiología Pediátrica','Endocrinología Pediátrica','Gastroenterología Pediátrica','Neonatología','Neumonología Pediátrica', 'Fellowship', 'Otra'],
-        neumonologia: ['Neumonología intervencionista','Neumonología crítica','Neumonología infantil', 'Fellowship', 'Otra']
+        medicina_familiar: ['Geriatría','Medicina De La Adolescencia','Medicina Paliativa y de Hospicio', 'Fellowship', 'Otra'],
+        pediatria: ['Cardiología Pediátrica','Endocrinología Pediátrica','Gastroenterología Pediátrica','Hematología y Oncología Pediátrica','Neonatología', 'Neurología Pediátrica','Neumonología Pediátrica', 'Fellowship', 'Otra'],
+        neumonologia: ['Neumonología intervencionista','Neumonología crítica','Neumonología infantil', 'Oncología Torácica', 'Patología Pleural', 'Enfermedades Vasculares Pulmonares', 'Fellowship', 'Otra']
     };
     
     // Obtener elementos del DOM
