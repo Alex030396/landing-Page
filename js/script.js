@@ -102,6 +102,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('cedula').addEventListener('input', function() {
         validateCedula();
     });
+    // Validar mpps en tiempo real
+    document.getElementById('mpps').addEventListener('input', function() {
+        validateMpps();
+    });
     
     // Validar teléfono en tiempo real
     document.getElementById('telefono').addEventListener('input', function() {
@@ -172,6 +176,18 @@ document.addEventListener('DOMContentLoaded', function() {
             return false;
         } else {
             hideError('cedulaError');
+            return true;
+        }
+    }
+    // Función para validar mpps
+    function validateMpps() {
+        const mpps = document.getElementById('mpps').value.trim();
+        
+        if (!mpps || !/^\d+$/.test(mpps)) {
+            showError('mppsError');
+            return false;
+        } else {
+            hideError('mppsError');
             return true;
         }
     }
@@ -329,6 +345,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Validar todos los campos
         const isNombreValid = validateNombre();
         const isCedulaValid = validateCedula();
+        const isMppsValid = validateMpps();
         const isTelefonoValid = validateTelefono();
         const isCorreoValid = validateCorreo();
         const isEspecialidadValid = validateEspecialidad();
@@ -338,6 +355,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Obtener valores
         const nombre = document.getElementById('nombre').value.trim();
         const cedula = document.getElementById('cedula').value.trim();
+        const mpps = document.getElementById('mpps').value.trim();
         const telefono = document.getElementById('telefono').value.trim();
         const correo = document.getElementById('correo').value.trim();
         const especialidad = document.getElementById('especialidad').value;
@@ -365,12 +383,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // Si es válido, crear JSON y mostrar
-        if (isNombreValid && isCedulaValid && isTelefonoValid && isCorreoValid && 
+        if (isNombreValid && isCedulaValid && isMppsValid && isTelefonoValid && isCorreoValid && 
             isEspecialidadValid && isSubespecialidadValid && isResidentLevelValid) {
             
             const formData = {
                 nombre: nombre,
                 cedula: cedula,
+                mpps: mpps,
                 telefono: telefono,
                 correo: correo,
                 especialidad: especialidad,
