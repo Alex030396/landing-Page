@@ -233,7 +233,7 @@ input:focus {
 }
 @media (max-width: 393px) {
     .mary{
-        margin-left: 0.5rem;
+        margin-left: 0.9rem;
         height: 80px;
     }
     .mar{
