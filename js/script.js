@@ -2,13 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Definir las subespecialidades
     const subespecialidades = {
         medicina_general: ['No aplica'],
-        residente: ['Medicina Familiar','Medicina Interna','Neumonologia','Oftalmologia','Otorrinolaringología','Pediatría', 'Otros'],
-        oftalmologia: ['Retina', 'Córnea', 'Glaucoma', 'Oftalmología Pediátrica', 'Estrabismo','Cataratas','Cirugía refractiva','Cirugía pediátrica','Neurooftalmología','Oculoplástia','Segmento Anterior','Segmento Posterior','Retina, vitreo y uveítis','Oculoplastía lagrimal y orbita','Oncología ocular y tumores', 'Otros'],
-        otorrinolaringologia: ['Alergia','Audiología','Cirugía De Cabeza Y Cuello', 'Cirugía Plástica Y Reconstructiva Facial','Laringología', 'Otología y Otoneurología', 'Otorrinolaringología Pediátrica', 'Rinología',  'Disfagia', 'Patología de Glándulas Salivales', 'Otros'],
-        medicina_interna:['Alergología','Cardiología', 'Endocrinología','Farmacología', 'Gastroenterología','Geriatría', 'Hematología', 'Infectología', 'Intensivista', 'Medicina Crítica','Medicina Del Sueño', 'Nefrología' , 'Neumología','Oncología', 'Reumatología', 'Otros'],
-        medicina_familiar: ['Geriatría','Medicina De La Adolescencia','Medicina Paliativa', 'Otros'],
-        pediatria: ['Cardiología Pediátrica','Endocrinología Pediátrica','Gastroenterología Pediátrica','Neonatología','Neumonogología Pediátrica', 'Otros'],
-        neumonologia: ['Neumonología intervencionista','Neumonología crítica','Neumonología infantil', 'Otros']
+        residente: ['Medicina Familiar','Medicina Interna','Neumonologia','Oftalmologia','Otorrinolaringología','Pediatría', 'Otra'],
+        oftalmologia: ['Retina', 'Córnea', 'Glaucoma', 'Oftalmología Pediátrica', 'Estrabismo','Cataratas','Cirugía refractiva','Cirugía pediátrica','Neurooftalmología','Oculoplástia','Segmento Anterior','Segmento Posterior','Retina, vitreo y uveítis','Oculoplastía lagrimal y orbita','Oncología ocular y tumores', 'Otra'],
+        otorrinolaringologia: ['Alergia','Audiología','Cirugía De Cabeza Y Cuello', 'Cirugía Plástica Y Reconstructiva Facial','Laringología', 'Otología y Otoneurología', 'Otorrinolaringología Pediátrica', 'Rinología',  'Disfagia', 'Patología de Glándulas Salivales', 'Otra'],
+        medicina_interna:['Alergología','Cardiología', 'Endocrinología','Farmacología', 'Gastroenterología','Geriatría', 'Hematología', 'Infectología', 'Intensivista', 'Medicina Crítica','Medicina Del Sueño', 'Nefrología' , 'Neumonología','Oncología', 'Reumatología', 'Otra'],
+        medicina_familiar: ['Geriatría','Medicina De La Adolescencia','Medicina Paliativa', 'Otra'],
+        pediatria: ['Cardiología Pediátrica','Endocrinología Pediátrica','Gastroenterología Pediátrica','Neonatología','Neumonología Pediátrica', 'Otra'],
+        neumonologia: ['Neumonología intervencionista','Neumonología crítica','Neumonología infantil', 'Otra']
     };
     
     // Obtener elementos del DOM
@@ -319,7 +319,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Manejar envío del formulario
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', async function(e) {
         e.preventDefault();
         
         // Ocultar mensajes previos
@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const selectedOptionalLevel = document.querySelector('input[name="optionalResidentLevel"]:checked');
             nivelResidencia = selectedOptionalLevel ? selectedOptionalLevel.value : 'No aplica';
         } else {
-            nivelResidencia = 'No aplica';
+            nivelResidencia = 'Graduado';
         }
         
         // Determinar el valor de subespecialidad
